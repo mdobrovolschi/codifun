@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formular cu date personale</title>
+</head>
+<body>
+
+<h1 style="color:black; text-align:center">Formular cu date personale</h1>
+
+<div style="text-align: center">
+<canvas id="myCanvas" width="300" height="80" style="border: 2px solid #a7a3a3;">
+
+</canvas>
+    <script>
+        var c=document.getElementById("myCanvas")
+        var ctx=c.getContext("2d");
+    ctx.font="25px Arial";
+    ctx.fillText("Hello World",75,45);
+</script>
+</div>
+
+
+<form action="formular.html" method="get">
+
+    Nume: <br> <input type="text" name="nume"> <br><br>
+
+    Prenume: <br> <input type="text" name="prenume"> <br> <br>
+
+    Data nasterii: <br> <input type="date" name="date"> <br> <br>
+
+    Tara de origine:<select name="Tara de origine" size="3">
+                    <option value="1" selected> Republica Moldova </option>
+                    <option value="2"> Romania </option>
+                    <option value="3"> Rusia </option>
+                    </select> <br> <br>
+
+    Interese: <br> <input type="checkbox" name="Interese" value="HTML"> HTML <br>
+                  <input type="checkbox" name="Interese" value="Javascript"> Javascript <br>
+                  <input type="checkbox" name="Interese" value="PHP"> PHP <br>
+                  <input type="checkbox" name="Interese" value="CSS"> CSS <br> <br> <br>
+
+    E-mail:<input type="text" name="Adresa de E-mail"> <br> <br>
+
+    Password:<input type="Password" name="pass"> <br> <br> <br>
+
+    Cât de des doriți să primiți notificări pe adresa de e-mail? <br> <input type="radio" name="1" value="Săptămânal"> Săptămânal <br>
+                                                                      <input type="radio" name="1" value="Lunar"> Lunar <br>
+                                                                      <input type="radio" name="1" value="Niciodată"> Niciodată <br> <br>
+
+    Părerea Dumneavoastră despre Codifun: <br> <textarea name="my-text" rows="8" cols="50"> </textarea><br> <br> <br> 
+	 
+	<input type="submit" value="Trimite">
+
+</form>
+
+</body>
+
+</html>
+
+
+
+
+
